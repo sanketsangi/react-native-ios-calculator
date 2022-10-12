@@ -10,7 +10,7 @@ import React from "react";
 const screen = Dimensions.get("window");
 const buttonWidth = screen.width / 4;
 
-const Button = () => {
+const Button = ({ onPress, text, size, theme }) => {
   const buttonStyles = [styles.button];
   const textStyles = [styles.text];
 
