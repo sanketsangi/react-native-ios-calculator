@@ -1,10 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const Row = () => {
+const Row = ({ children }) => {
   return (
-    <View>
-      <Text>Row</Text>
+    <View
+      style={{
+        flexDirection: "row",
+      }}
+    >
+      {children}
     </View>
   );
 };
